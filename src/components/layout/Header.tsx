@@ -1,14 +1,18 @@
 import React from 'react'
 import {Calendar, Bed, Building2, HomeIcon} from 'lucide-react'
 
-const Header = () => {
+interface HomePageProps {
+  onPageChange: (page: string) => void;
+}
+
+const Header = ({onPageChange}: HomePageProps) => {
   return (
-    <header className='flex justify-between p-5 items-center fixed w-full'>
+    <header className='flex justify-between p-5 items-center fixed w-full bg-white z-100'>
       <div className='flex gap-2 items-center'>
         <Building2 color='rgb(16 185 129)'/>
         <p className='text-emerald-500 font-bold text-2xl'>Pousada Paradise</p>
       </div>
-      <div className='flex gap-2'>
+      <nav className='flex gap-2'>
         <button className='bg-emerald-500 flex gap-2 text-white rounded-lg p-2'>
           <HomeIcon/>
           <p>Início</p>
@@ -21,7 +25,7 @@ const Header = () => {
           <Calendar/>
           <p>Reservas</p>
         </button>
-      </div>
+      </nav>
     </header>
   )
 }
