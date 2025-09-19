@@ -16,8 +16,16 @@ const Home = ({onPageChange}: HomePageProps) => {
             Sua experiência única de hospedagem começa aqui. Gerencie reservas, acomodações e proporcione momentos inesquecíveis aos seus hóspedes.
           </p>
           <div className='flex gap-2 justify-center'>
-            <button className='px-10 bg-emerald-400 transition hover:bg-emerald-800 cursor-pointer text-white rounded-2xl p-3 font-semibold'>Gerenciar Acomodações</button>
-            <button className='px-10 border-white border-1 transition hover:bg-white cursor-pointer hover:text-emerald-500 text-white rounded-2xl p-3'>Ver Reservas</button>
+            <button 
+              onClick={()=>{onPageChange('accommodations')}} 
+              className='px-10 bg-emerald-400 transition hover:bg-emerald-800 cursor-pointer text-white rounded-2xl p-3 font-semibold'>
+              Gerenciar Acomodações
+            </button>
+            <button
+              onClick={()=>{onPageChange('bookings')}}
+              className='px-10 border-white border-1 transition hover:bg-white cursor-pointer hover:text-emerald-500 text-white rounded-2xl p-3'>
+              Ver Reservas
+            </button>
           </div>
         </div>
       </div>
@@ -50,7 +58,11 @@ const Home = ({onPageChange}: HomePageProps) => {
       <div className='flex flex-col gap-2 bg-emerald-500 w-full h-100 items-center justify-center text-center'>
         <h1 className='font-bold text-white text-4xl'>Pronto para começar?</h1>
         <p className='text-emerald-50 text-xl w-180'>Acesse nossa área de gerenciamento e tenha controle total sobre as acomodações e reservas da sua pousada.</p>
-        <button className='bg-white transition hover:bg-emerald-50 hover:text-emerald-900 cursor-pointer text-emerald-800 rounded-2xl p-3 mt-4 px-10'>Gerenciar Sistema</button>
+        <button 
+          onClick={()=>{onPageChange('bookings')}}
+          className='bg-white transition hover:bg-emerald-50 hover:text-emerald-900 cursor-pointer text-emerald-800 rounded-2xl p-3 mt-4 px-10'>
+          Gerenciar Sistema
+        </button>
       </div>
     </>
   )
