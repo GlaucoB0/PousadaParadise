@@ -7,7 +7,7 @@ interface HomePageProps {
 
 const Footer = ({onPageChange}: HomePageProps) => {
   return (
-    <footer className='py-10 px-5'>
+    <footer className='py-10 px-5 relative'>
       <div className='flex justify-between'>
         <div className='flex flex-col gap-2 items-start w-100'>
           <h2 className='mb-2 text-lg font-semibold'>Pousada Serenidade</h2>
