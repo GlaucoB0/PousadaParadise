@@ -1,69 +1,89 @@
-# React + TypeScript + Vite
+````markdown
+# 🏨 Pousada Paradise – Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web desenvolvida em **React + TypeScript + TailwindCSS** para gerenciamento de uma pousada.  
+Permite visualizar e administrar acomodações, reservas e informações gerais, com um design moderno e responsivo.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias
 
-## Expanding the ESLint configuration
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/) (para consumo de API)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📚 Funcionalidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Home Page** com apresentação da pousada e do sistema
+- **Listagem de acomodações** em cards
+- **Adicionar, editar e excluir acomodações**
+- **Agendamento/Reservas** com formulário (data de entrada, saída, hóspedes)
+- Layout **responsivo** e moderno
+- Integração com back-end (API) para dados reais
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 🖥️ Demonstração
+
+_(adicione aqui prints ou GIFs do front-end rodando)_
+
+---
+
+## 📦 Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/seuusuario/pousada-paradise-frontend.git
+cd pousada-paradise-frontend
+npm install
+# ou
+yarn install
+````
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+# ou
+yarn dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Abra [http://localhost:5173](http://localhost:5173) (ou a porta indicada no terminal).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Estrutura de pastas
+
+```
+src/
+ ├─ components/      # Componentes reutilizáveis
+ ├─ pages/           # Páginas do app (Home, Acomodações, Reservas, etc.)
+ ├─ services/        # Serviços e chamadas à API
+ ├─ assets/          # Imagens, ícones
+ ├─ App.tsx
+ └─ main.tsx
+```
+
+---
+
+## 🛠️ Scripts Disponíveis
+
+* `npm run dev` – inicia o servidor de desenvolvimento
+
+---
+
+## 📝 Licença
+
+Este projeto é de uso **pessoal/portfólio**.
+© 2025 Glauco Soares – Todos os direitos reservados.
+
+```
+
+---
+
+Quer que eu já adicione uma **seção com links para suas redes sociais** (LinkedIn/GitHub/Instagram) no final do README para reforçar que é portfólio seu?
 ```
