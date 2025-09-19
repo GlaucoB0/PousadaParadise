@@ -27,7 +27,7 @@ Permite visualizar e administrar acomodações, reservas e informações gerais,
 
 ## 🖥️ Demonstração
 
-_(adicione aqui prints ou GIFs do front-end rodando)_
+<img width="1123" height="698" alt="image" src="https://github.com/user-attachments/assets/373d8aea-808e-4154-873d-0472a1eced6a" />
 
 ---
 
