@@ -1,4 +1,3 @@
-````markdown
 # 🏨 Pousada Paradise – Front-end
 
 Interface web desenvolvida em **React + TypeScript + TailwindCSS** para gerenciamento de uma pousada.  
