@@ -36,8 +36,8 @@ Permite visualizar e administrar acomodações, reservas e informações gerais,
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seuusuario/pousada-paradise-frontend.git
-cd pousada-paradise-frontend
+git clone https://github.com/GlaucoB0/PousadaParadise.git
+cd PousadaParadise
 npm install
 # ou
 yarn install
